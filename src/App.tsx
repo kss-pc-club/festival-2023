@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Book from "./components/Book";
 import Works from "./components/Works";
 import Introduction from "./components/Introduction";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Book />
       <Works />
       <Introduction />
+      <Footer />
     </div>
   );
 }
