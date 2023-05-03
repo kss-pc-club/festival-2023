@@ -1,19 +1,45 @@
 import { Box, Text } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { useState, useEffect } from "react";
 
 const Header = () => {
+  //一番上に戻ったら再度表示したい
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollY]);
+
   return (
-    <header>
+    <header
+      style={{
+        position: "sticky",
+        top: 0,
+        zIndex: 100,
+        backdropFilter: "blur(10px)",
+      }}
+    >
       <Box
         w="100%"
         h={1}
         bg="linear-gradient(90deg, rgba(247, 166, 12, 1) 10%, rgba(255, 34, 87, 1) 40%, rgba(154, 39, 238, 1) 68%, rgba(35, 102, 247, 1) 90%);"
       />
-      <Box w="100%" display="flex" bg="white">
+      <Box
+        w="100%"
+        display="flex"
+        boxShadow={scrollY > 0 ? "0px 2px 10px rgba(0, 0, 0, 0.15)" : "none"}
+      >
         <Box
           mx="auto"
-          my={2}
+          px={4}
+          py={2}
           w="100%"
           maxW="1200px"
           display="flex"
