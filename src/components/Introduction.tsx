@@ -169,7 +169,10 @@ const Introduction = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.instagram.com/ksspcclub/" color="blue.600">
+            <Link
+              href="https://www.instagram.com/kss_pc_club/"
+              color="blue.600"
+            >
               Instagram
             </Link>
           </ListItem>
