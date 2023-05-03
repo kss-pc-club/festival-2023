@@ -1,6 +1,6 @@
 import Container from "./Container";
 import Heading from "./Heading";
-import { Box, Button, Link, Text, Image } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 
 const Works = () => {
   return (
