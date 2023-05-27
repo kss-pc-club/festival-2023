@@ -20,7 +20,7 @@ const Book = () => {
         flexDirection={{ base: "column", md: "row" }}
       >
         <Image
-          src="/images/cover.png"
+          src="/images/cover.webp"
           alt="book"
           w="100%"
           maxW="320px"
