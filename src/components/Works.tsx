@@ -26,7 +26,19 @@ type Work = {
   github?: string;
 };
 
-const works: Work[] = [];
+const works: Work[] = [
+  {
+    title: "シューティングゲーム",
+    desc: "Pythonで作ったシンプルなシューティングゲーム",
+    img: "/images/works/shooting.jpg",
+  },
+
+  {
+    title: "帰路",
+    desc: "ジャンル：ホラー(？)おうちに帰る話です。",
+    img: "/images/works/kaeri.png",
+  },
+];
 
 const Works = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -128,7 +140,6 @@ const Works = () => {
                     w="100%"
                     rounded="md"
                     aspectRatio={16 / 9}
-                    boxShadow="0px 2px 10px rgba(0, 0, 0, 0.15)"
                   />
                   <Box
                     display="flex"
