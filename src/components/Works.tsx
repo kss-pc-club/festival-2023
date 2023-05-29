@@ -38,6 +38,22 @@ const works: Work[] = [
     desc: "ジャンル：ホラー(？)おうちに帰る話です。",
     img: "/images/works/kaeri.png",
   },
+  {
+    title: "イラスト",
+    desc: "絵です。",
+    img: "/images/works/ar15.png",
+  },
+  {
+    title: "スネークゲーム Created with AI",
+    desc: "近頃話題の対話型AI(ChatGPT)でスネークゲームを作りました。制作過程は部誌に書かれているので興味がある方はぜひそちらも読んでください！",
+    img: "/images/works/snake.jpg",
+    url: "https://jsfiddle.net/vkqwj439/show/",
+  },
+  {
+    title: "platformerもどき",
+    desc: "plat formerのようなゲームです。クオリティが低いのでもどき(似たようで違うもの)になってました。赤色に当たったらゲームオーバーなので避けながら進んでいきましょう！難易度は３つに分かれています。",
+    img: "/images/works/platformer.png",
+  },
 ];
 
 const Works = () => {
