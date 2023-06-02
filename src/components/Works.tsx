@@ -54,6 +54,16 @@ const works: Work[] = [
     desc: "plat formerのようなゲームです。クオリティが低いのでもどき(似たようで違うもの)になってました。赤色に当たったらゲームオーバーなので避けながら進んでいきましょう！難易度は３つに分かれています。",
     img: "/images/works/platformer.png",
   },
+  {
+    title: "VS数学",
+    desc: "数学の作品をモチーフにした攻撃がやってきます 逃げて下さい！！！ 倒れなければ勝利です！途中で倒れたら負けです 頑張ってください",
+    img: "/images/works/vs.jpg",
+  },
+  {
+    title: "英文生成AIで和訳の練習をしよう",
+    desc: "昨今話題の ChatGPT を利用したソフトウェアです。ランダムな英文が生成されるので、その和訳が練習できます。",
+    img: "/images/works/translation.png",
+  },
 ];
 
 const Works = () => {
